@@ -111,11 +111,6 @@ touch() {
 }
 
 # NOTE: I use 'source' to reflect self-made commands upon shells.
-alias icloud='source icloud'
-alias umnt-remote='source umnt-remote'
-alias mnt-nas2='source mnt-nas2'
-alias mnt-gw='source mnt-gw'
-alias rdp-endor='ssh -L 13389:192.168.2.15:3389 uehara@gw.isi.imi.i.u-tokyo.ac.jp -p 53310'
 colorlist() {
 	for color in {000..015}; do
 		print -nP "%F{$color}$color %f"
@@ -128,4 +123,6 @@ colorlist() {
 		fi
 	done
 }
+
+eval "$(pyenv init -)"
 
