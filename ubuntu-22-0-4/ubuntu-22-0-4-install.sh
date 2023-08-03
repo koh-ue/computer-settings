@@ -46,8 +46,14 @@ cat ~/.ssh/id_rsa.pub
 # INTENT: Install vscode.
 sudo snap install --classic code
 
+# INTENT: Install Gogh.
+bash -c  "$(wget -qO- https://git.io/vQgMr)" 
+
 # INTENT: Install Chrome.
 cd ~/Downloads
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 cd 
+
+# INTENT: Make workspace directories.
+mkdir ~/Documents/works
