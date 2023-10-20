@@ -1,11 +1,12 @@
 # TODO: FIXME: XXX: HACK: NOTE: INTENT: USAGE:
 
 sudo apt update
+sudo apt upgrade
 sudo apt install curl
-sudo apt install htop
-sudo apt install vim
+sudo apt install htop vim
 
 # INTENT: Install oh-my-zsh.
+sudo apt install git
 sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -57,3 +58,9 @@ cd
 
 # INTENT: Make workspace directories.
 mkdir ~/Documents/works
+
+# INTENT: Install notion-app.
+echo "deb [trusted=yes] https://apt.fury.io/notion-repackaged/ /" | sudo tee /etc/apt/sources.list.d/notion-repackaged.list
+sudo apt update
+sudo apt install notion-app-enhancecd
+sudo apt install notion-app
