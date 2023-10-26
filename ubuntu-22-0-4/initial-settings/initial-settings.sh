@@ -29,7 +29,7 @@ source ~/.zprofile
 # INTENT: Install pyenv and miniconda
 brew install pyenv
 source ~/.zprofile
-pyenv install miniconda3-3.11-23.5.0-3
+pyenv install miniconda3-3.11-23.5.2-0
 
 # INTENT: Set commit template.
 cp commit_template ~/.commit_template
